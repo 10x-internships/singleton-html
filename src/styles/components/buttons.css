@@ -1,20 +1,20 @@
 .btn {
-  border: 0;
-  outline: none;
-  border-radius: 4px;
-  padding: 20px 23px;
-  transition: all 0.25s linear;
-  text-align: center;
-  font-weight: 500;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    padding: 20px 23px;
+    transition: all 0.25s linear;
+    text-align: center;
+    font-weight: 500;
 }
 
 .btn--outline {
-  border: 1px solid var(--border-color);
-  color: var(--purple-color);
+    border: 1px solid var(--border-color);
+    color: var(--purple-color);
 }
 
 .btn--outline:hover {
-  background-color: var(--purple-color);
-  border-color: var(--purple-color);
-  color: white;
+    background-color: var(--purple-color);
+    border-color: var(--purple-color);
+    color: white;
 }

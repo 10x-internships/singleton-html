@@ -1,18 +1,15 @@
 {
   "name": "singleton-html",
   "version": "1.0.0",
-  "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html",
+    "prettier": "prettier --write ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/greenwich-internships/singleton-html.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/greenwich-internships/singleton-html/issues"
