@@ -1,36 +1,3 @@
-/* Reset */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  display: inline-block;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-input,
-button {
-  font-family: inherit;
-  display: inline-block;
-}
-
-button {
-  cursor: pointer;
-}
-
-ul {
-  list-style: none;
-}
-
 /* Global style */
 :root {
   --font-family: 'Poppins', sans-serif;
@@ -100,10 +67,18 @@ body {
 .header__toggle {
   font-size: 24px;
   display: none;
+  cursor: pointer;
 }
 
 .header__overlay {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
 }
 
 /* Navbar */
@@ -125,9 +100,35 @@ body {
   color: var(--text-color-light);
 }
 
+.nav__auth {
+  display: none;
+}
+
 /* Responsive header and nav */
 @media screen and (max-width: 1023px) {
-  .nav,
+  .nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--white-color);
+    padding: 50px 20px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    transform: translate(100%);
+    transition: transform 0.25s linear;
+    z-index: 20;
+  }
+
+  .nav__list {
+    display: block;
+  }
+
+  .nav__auth {
+    display: block;
+  }
+
   .header__auth {
     display: none;
   }
@@ -140,45 +141,24 @@ body {
     display: block;
   }
 
-  .header.active .nav {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 30vh;
-    height: 100vh;
-    background-color: var(--white-color);
-    padding: 20px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-    z-index: 20;
+  .header .nav__item {
+    margin-right: 0;
   }
 
-  .header.active .nav__list {
-    display: block;
-  }
-
-  .header.active .nav__item {
-    margin: 0;
-  }
-
-  .header.active .nav__link {
+  .nav__link {
     padding: 20px;
   }
 
-  .header.active .nav__link:hover {
+  .nav__link:hover {
     background-color: var(--purple-color);
     border-radius: 4px;
     color: var(--white-color);
   }
 
+  .header.active .nav {
+    transform: translate(0);
+  }
   .header.active .header__overlay {
     display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10;
   }
 }

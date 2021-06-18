@@ -14,7 +14,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
     <title>Singleton</title>
   </head>
   <body>
@@ -22,7 +23,7 @@
       <div class="container">
         <!-- Header -->
         <header class="header">
-          <a href="#" class="header__logo">Singleton</i></a>
+          <a href="#" class="header__logo">Singleton</a>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -38,10 +39,16 @@
                 <a href="#" class="nav__link">Contacts</a>
               </li>
             </ul>
+            <div class="nav__auth">
+              <a href="#" class="nav__link">Login</a>
+              <a href="#" class="nav__link">Sign up</a>
+            </div>
           </nav>
           <div class="header__auth">
             <a href="#" class="header__auth-link">Login</a>
-            <a href="#" class="header__auth-link header__auth-link--signup">Sign up</a>
+            <a href="#" class="header__auth-link header__auth-link--signup"
+              >Sign up</a
+            >
           </div>
           <div class="header__toggle">
             <i class="fa fa-bars"></i>
@@ -51,6 +58,6 @@
       </div>
     </div>
 
-    <script src="./main.js"></script>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
