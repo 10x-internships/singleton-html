@@ -19,7 +19,7 @@
   outline: none;
 }
 
-.form__input input::-webkit-input-placeholder {
+.form__input input::placeholder {
   color: #aeb0bf;
 }
 
