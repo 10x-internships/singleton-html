@@ -1,8 +1,9 @@
 :root {
-    --font-family: "Poppins", sans-serif;
-    --white-color: #fff;
-    --text-color: #111111;
-    --text-color-light: #b1b1b1;
-    --purple-color: #905fff;
-    --border-color: #e4e7ed;
+  --font-family: "Poppins", sans-serif;
+  --white-color: #fff;
+  --text-color: #111111;
+  --text-color-light: #b1b1b1;
+  --border-color: #e4e7ed;
+  --purple-color: #905fff;
+  --green-color: #6ac85a;
 }

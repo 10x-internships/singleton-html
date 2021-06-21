@@ -6,6 +6,12 @@
   border-radius: 4px;
   outline: none;
   transition: all 0.25s linear;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--green-color);
+  color: var(--white-color);
 }
 
 .btn--outline {
