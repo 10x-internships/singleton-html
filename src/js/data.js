@@ -10,7 +10,7 @@ const data = [
     icon: lock,
     title: 'Security Management',
     desc: 'It is a long established fact that a reader will distracted by the readable content',
-    featureLink: '#',
+    link: '#',
   },
   {
     icon: fire,

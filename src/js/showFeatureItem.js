@@ -13,6 +13,7 @@ export function showFeatureItem() {
     const featureLink = clone.querySelector('.feature__link');
 
     icon.src = featureItem.icon;
+    icon.alt = featureItem.title;
     featureTitle.textContent = featureItem.title;
     featureDesc.textContent = featureItem.desc;
     featureLink.href = featureItem.link;
