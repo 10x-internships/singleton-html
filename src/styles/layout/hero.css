@@ -44,6 +44,7 @@
 
 @media screen and (max-width: 1023px) {
   .hero {
+    padding-bottom: 70px;
     flex-direction: column;
   }
 
@@ -74,6 +75,7 @@
 
 @media screen and (max-width: 1023px) {
   .hero {
+    padding-bottom: 50px;
     flex-direction: column;
   }
 

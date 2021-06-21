@@ -1,0 +1,29 @@
+.client {
+  margin-top: 40px;
+  @mixin flex space-between, center;
+}
+
+@media screen and (max-width: 1023px) {
+  .client {
+    margin-top: 20px;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .client {
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .client .client__image {
+    flex-basis: 20%;
+  }
+
+  .client .client__image img {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+}
