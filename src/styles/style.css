@@ -9,8 +9,11 @@
 /* Components */
 @import "./components/buttons.css";
 @import "./components/form.css";
+@import "./components/section-heading.css";
+@import "./components/section-description.css";
 
 /* Layout */
 @import "./layout/header.css";
 @import "./layout/hero.css";
 @import "./layout/client.css";
+@import "./layout/feature.css";
