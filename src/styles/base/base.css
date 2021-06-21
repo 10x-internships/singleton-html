@@ -1,41 +1,41 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    display: inline-block;
+  display: inline-block;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  display: block;
+  max-width: 100%;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 body {
-    font-family: var(--font-family);
-    font-size: 16px;
-    line-height: 1;
-    color: var(--text-color);
-    min-height: 100vh;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 1;
 }
 
 .wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .container {
-    max-width: 1195px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 0 auto;
+  max-width: 1195px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 0 auto;
 }
