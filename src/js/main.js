@@ -1,3 +1,5 @@
+import {showFeatureItem} from './showFeatureItem';
+
 // Toggle menu
 const menuToggle = document.querySelector('.header__toggle');
 const header = document.querySelector('.header');
@@ -13,3 +15,8 @@ headerOverlay.addEventListener('click', () => {
   header.classList.remove('active');
   body.style.overflow = 'auto';
 });
+
+function init() {
+  showFeatureItem();
+}
+init();
