@@ -1,12 +1,12 @@
 .section-heading {
   max-width: 780px;
-  margin: 0 auto;
   font-size: 50px;
   font-weight: 400;
   line-height: 1.2;
 }
 
 .section-heading--center {
+  margin: 0 auto;
   text-align: center;
 }
 

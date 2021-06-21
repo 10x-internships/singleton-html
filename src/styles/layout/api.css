@@ -1,0 +1,49 @@
+.api {
+  margin-top: 180px;
+  @mixin flex space-between, center;
+}
+
+.api > * {
+  flex-basis: 50%;
+}
+
+.api__image img {
+  width: 100%;
+  max-width: 487px;
+}
+
+.api__title {
+  @mixin flex flex-start, center;
+}
+
+.api__title {
+  margin-bottom: 40px;
+}
+
+.api__title h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.api__icon {
+  margin-right: 25px;
+  width: 70px;
+  height: 70px;
+  background-color: #ffe6df;
+  border-radius: 25px;
+  @mixin flex center, center;
+}
+
+.api__heading {
+  margin-bottom: 60px;
+  max-width: 475px;
+}
+
+.api__btn {
+  @mixin flex center, center;
+  width: max-content;
+}
+
+.api__btn i {
+  margin-left: 14px;
+}
