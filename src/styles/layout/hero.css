@@ -73,38 +73,11 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
   .hero {
     padding-bottom: 50px;
-    flex-direction: column;
   }
 
-  .hero__image {
-    order: -1;
-  }
-
-  .hero__image img {
-    margin: 0 auto;
-    width: 80%;
-  }
-
-  .hero__title {
-    margin: 0 0 30px;
-    font-size: 40px;
-  }
-
-  .hero__desc {
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
-
-  .hero__form .form__input {
-    max-width: none;
-    flex: 1;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .hero__title {
     margin: 0 0 20px;
     font-size: 24px;
