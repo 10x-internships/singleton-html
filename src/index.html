@@ -17,93 +17,91 @@
     <title>Singleton</title>
   </head>
   <body>
-    <div class="wrapper">
-      <!-- Header -->
-      <header class="header container">
-        <a href="#" class="header__logo">Singleton</a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Services</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Projects</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Contacts</a>
-            </li>
-          </ul>
-          <div class="nav__auth">
-            <a href="#" class="nav__link">Login</a>
-            <a href="#" class="nav__link">Sign up</a>
+    <!-- Header -->
+    <header class="header container">
+      <a href="#" class="header__logo">Singleton</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contacts</a>
+          </li>
+        </ul>
+        <div class="nav__auth">
+          <a href="#" class="nav__link">Login</a>
+          <a href="#" class="nav__link">Sign up</a>
+        </div>
+      </nav>
+      <div class="header__auth">
+        <a href="#" class="header__auth-link">Login</a>
+        <a href="#" class="btn btn--outline header__auth-link--signup">
+          Sign up
+        </a>
+      </div>
+      <div class="header__toggle">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="header__overlay"></div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero container">
+      <div class="hero__info">
+        <h1 class="hero__title">
+          Make more time for the work that matters most
+        </h1>
+        <p class="hero__desc">
+          Create screens directly in Singleton or add your images from Sketch or
+          Figma. You can even sync designs from your cloud storage
+        </p>
+        <form class="form hero__form">
+          <div class="form__input">
+            <img src="./images/email.svg" alt="Email" class="form__icon" />
+            <input type="text" placeholder="Type your email" />
           </div>
-        </nav>
-        <div class="header__auth">
-          <a href="#" class="header__auth-link">Login</a>
-          <a href="#" class="btn btn--outline header__auth-link--signup">
-            Sign up
-          </a>
-        </div>
-        <div class="header__toggle">
-          <i class="fa fa-bars"></i>
-        </div>
-        <div class="header__overlay"></div>
-      </header>
+          <button type="submit" class="btn btn--primary">Get started</button>
+        </form>
+      </div>
+      <div class="hero__image">
+        <img
+          src="./images/analytics.png"
+          alt="A woman talking about something"
+        />
+      </div>
+    </section>
 
-      <!-- Hero section -->
-      <section class="hero container">
-        <div class="hero__info">
-          <h1 class="hero__title">
-            Make more time for the work that matters most
-          </h1>
-          <p class="hero__desc">
-            Create screens directly in Singleton or add your images from Sketch
-            or Figma. You can even sync designs from your cloud storage
-          </p>
-          <form class="form hero__form">
-            <div class="form__input">
-              <img src="./images/email.svg" alt="Email" class="form__icon" />
-              <input type="text" placeholder="Type your email" />
-            </div>
-            <button type="submit" class="btn btn--primary">Get started</button>
-          </form>
-        </div>
-        <div class="hero__image">
-          <img
-            src="./images/analytics.png"
-            alt="A woman talking about something"
-          />
-        </div>
-      </section>
-
-      <!-- Client section -->
-      <section class="client container">
-        <div class="client__image">
-          <img src="./images/google.svg" alt="Google" />
-        </div>
-        <div class="client__image">
-          <img src="./images/chrome.svg" alt="Chrome" />
-        </div>
-        <div class="client__image">
-          <img src="./images/uber.svg" alt="Uber" />
-        </div>
-        <div class="client__image">
-          <img src="./images/stripe.svg" alt="Stripe" />
-        </div>
-        <div class="client__image">
-          <img src="./images/nike.svg" alt="Nike" />
-        </div>
-        <div class="client__image">
-          <img src="./images/airbnb.svg" alt="Airbnb" />
-        </div>
-        <div class="client__image">
-          <img src="./images/mastercard.svg" alt="Mastercard" />
-        </div>
-      </section>
-    </div>
+    <!-- Client section -->
+    <section class="client container">
+      <div class="client__image">
+        <img src="./images/google.svg" alt="Google" />
+      </div>
+      <div class="client__image">
+        <img src="./images/chrome.svg" alt="Chrome" />
+      </div>
+      <div class="client__image">
+        <img src="./images/uber.svg" alt="Uber" />
+      </div>
+      <div class="client__image">
+        <img src="./images/stripe.svg" alt="Stripe" />
+      </div>
+      <div class="client__image">
+        <img src="./images/nike.svg" alt="Nike" />
+      </div>
+      <div class="client__image">
+        <img src="./images/airbnb.svg" alt="Airbnb" />
+      </div>
+      <div class="client__image">
+        <img src="./images/mastercard.svg" alt="Mastercard" />
+      </div>
+    </section>
 
     <script src="./js/main.js"></script>
   </body>
