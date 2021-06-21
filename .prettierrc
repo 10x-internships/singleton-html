@@ -1,3 +1,25 @@
 {
-  "singleQuote": true
+  "overrides": [
+    {
+      "files": "*.js",
+      "options": {
+        "arrowParens": "always",
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": false
+      }
+    },
+    {
+      "files": "*.html",
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": "*.css",
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
 }

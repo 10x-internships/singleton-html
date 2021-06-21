@@ -1,0 +1,20 @@
+.btn {
+  padding: 20px 23px;
+  font-weight: 500;
+  text-align: center;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.25s linear;
+}
+
+.btn--outline {
+  color: var(--purple-color);
+  border: 1px solid var(--border-color);
+}
+
+.btn--outline:hover {
+  color: white;
+  background-color: var(--purple-color);
+  border-color: var(--purple-color);
+}

@@ -1,0 +1,36 @@
+{
+  "name": "singleton-html",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "prettier": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greenwich-internships/singleton-html.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greenwich-internships/singleton-html/issues"
+  },
+  "homepage": "https://github.com/greenwich-internships/singleton-html#readme",
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "parcel": "^2.0.0-beta.3.1",
+    "postcss": "^8.3.5",
+    "postcss-import": "^14.0.2",
+    "postcss-mixins": "^8.1.0",
+    "postcss-nested": "^5.0.5",
+    "prettier": "^2.3.1",
+    "pretty-quick": "^3.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
