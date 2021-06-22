@@ -1,13 +1,13 @@
 import {planItemData} from './data';
 
 export function showPlanItem() {
-  const featureList = document.querySelector('.plan__list');
+  const planList = document.querySelector('.plan__list');
   const template = document.getElementById('planItem');
 
   planItemData.forEach((planItem) => {
     const {title, price, info, link, dark} = planItem;
     const clone = template.content.cloneNode(true);
-    const featureItemElement = clone.querySelector('.plan__item');
+    const planItemElement = clone.querySelector('.plan__item');
     const titleElement = clone.querySelector('.plan__title');
     const priceElement = clone.querySelector('.plan__price');
     const infoElement = clone.querySelectorAll('.plan__info p');
@@ -26,12 +26,12 @@ export function showPlanItem() {
     }
 
     if (dark) {
-      featureItemElement.classList.add('plan__item--dark');
+      planItemElement.classList.add('plan__item--dark');
       linkElement.classList.add('btn--secondary');
     } else {
       linkElement.classList.add('btn--outline');
     }
 
-    featureList.appendChild(clone);
+    planList.appendChild(clone);
   });
 }
