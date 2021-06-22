@@ -1,0 +1,44 @@
+.form {
+  @mixin flex;
+}
+
+.form__input {
+  max-width: 262px;
+  padding: 16px;
+  margin-right: 10px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  @mixin flex;
+}
+
+.form__input input {
+  width: 100%;
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.form__input input::placeholder {
+  color: #aeb0bf;
+}
+
+.form button {
+  width: 180px;
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    display: block;
+  }
+
+  .form__input {
+    margin-right: 0;
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+
+  .form button {
+    width: 100%;
+  }
+}

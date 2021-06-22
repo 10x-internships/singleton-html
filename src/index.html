@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Singleton</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header container">
+      <a href="#" class="header__logo">Singleton</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contacts</a>
+          </li>
+        </ul>
+        <div class="nav__auth">
+          <a href="#" class="nav__link">Login</a>
+          <a href="#" class="nav__link">Sign up</a>
+        </div>
+      </nav>
+      <div class="header__auth">
+        <a href="#" class="header__auth-link">Login</a>
+        <a href="#" class="btn btn--outline header__auth-link--signup">
+          Sign up
+        </a>
+      </div>
+      <div class="header__toggle">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="header__overlay"></div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero container">
+      <div class="hero__info">
+        <h1 class="hero__title">
+          Make more time for the work that matters most
+        </h1>
+        <p class="hero__desc">
+          Create screens directly in Singleton or add your images from Sketch or
+          Figma. You can even sync designs from your cloud storage
+        </p>
+        <form class="form hero__form">
+          <div class="form__input">
+            <img src="./images/email.svg" alt="Email" class="form__icon" />
+            <input type="text" placeholder="Type your email" />
+          </div>
+          <button type="submit" class="btn btn--primary">Get started</button>
+        </form>
+      </div>
+      <div class="hero__image">
+        <img
+          src="./images/analytics.png"
+          alt="A woman talking about something"
+        />
+      </div>
+    </section>
+
+    <!-- Client section -->
+    <section class="client container">
+      <div class="client__image">
+        <img src="./images/google.svg" alt="Google" />
+      </div>
+      <div class="client__image">
+        <img src="./images/chrome.svg" alt="Chrome" />
+      </div>
+      <div class="client__image">
+        <img src="./images/uber.svg" alt="Uber" />
+      </div>
+      <div class="client__image">
+        <img src="./images/stripe.svg" alt="Stripe" />
+      </div>
+      <div class="client__image">
+        <img src="./images/nike.svg" alt="Nike" />
+      </div>
+      <div class="client__image">
+        <img src="./images/airbnb.svg" alt="Airbnb" />
+      </div>
+      <div class="client__image">
+        <img src="./images/mastercard.svg" alt="Mastercard" />
+      </div>
+    </section>
+
+    <!-- Feature section -->
+    <section class="feature container">
+      <h2 class="section-heading section-heading--center feature__heading">
+        Save time managin social media for your business
+      </h2>
+      <div class="feature__list">
+        <!-- Include data with template tag -->
+      </div>
+      <div class="section-description">
+        <p>
+          Create screens directly in Singleton or add your images from Sketch or
+          Figma. You can even sync designs from your cloud storage
+        </p>
+        <a href="#" class="btn btn--primary">Explore All Feature</a>
+      </div>
+    </section>
+
+    <template id="featureItem">
+      <div class="feature__item">
+        <div class="feature__icon">
+          <img src="" />
+        </div>
+        <h3 class="feature__title"></h3>
+        <p class="feature__desc"></p>
+        <a href="#" class="feature__link">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </template>
+
+    <!-- API section -->
+    <section class="api container margin-top">
+      <div class="api__image">
+        <img src="./images/tennisplayer2.png" alt="A woman playing tennis" />
+      </div>
+      <div class="api__info">
+        <div class="api__title">
+          <div class="api__icon">
+            <img src="./images/puzzle-red.svg" alt="Red puzzle" />
+          </div>
+          <h4>API Reference</h4>
+        </div>
+        <h2 class="section-heading api__heading">
+          We believe in helping people pay attention to what matters
+        </h2>
+        <a href="#" class="btn btn--primary api__btn">
+          <span>Explore All Feature</span> <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Invite section -->
+    <section class="invite container margin-top">
+      <h2 class="section-heading section-heading--center">
+        Invite friends & earn rewards
+      </h2>
+      <div class="media invite__media">
+        <div class="media__icon">
+          <i class="fas fa-play"></i>
+        </div>
+        <p class="media__text">Play introduction video</p>
+      </div>
+      <div class="invite__images">
+        <div class="invite__image">
+          <img src="./images/phone.jpg" alt="Phone" />
+        </div>
+        <div class="invite__image">
+          <img src="./images/keyfolder.png" alt="A man with red shirt" />
+        </div>
+      </div>
+      <div class="section-description">
+        <p>
+          Create screens directly in Singleton or add your images from Sketch or
+          Figma. You can even sync designs from your cloud storage
+        </p>
+      </div>
+    </section>
+
+    <!-- Plan section -->
+    <section class="plan container margin-top">
+      <h2 class="section-heading plan__heading">
+        Build the right plan for your team
+      </h2>
+      <div class="plan__list">
+        <!-- Include plan item data with template tag -->
+      </div>
+      <div class="section-description plan__desc">
+        <p>
+          Create screens directly in Singleton or add your images from Sketch or
+          Figma. You can even sync designs from your cloud storage
+        </p>
+      </div>
+    </section>
+
+    <template id="planItem">
+      <div class="plan__item">
+        <h4 class="plan__title"></h4>
+        <p class="plan__price"></p>
+        <div class="plan__info"></div>
+        <a href="#" class="plan__link btn">Select Plan</a>
+      </div>
+    </template>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a href="#" class="footer__logo">Singleton</a>
+          <div class="footer__links-wrap">
+            <div class="footer__links">
+              <h4 class="footer__links-title">Learn</h4>
+              <ul class="footer__links-list">
+                <li class="footer__links-item"><a href="#">Our Courses</a></li>
+                <li class="footer__links-item">
+                  <a href="#">The Programme</a>
+                </li>
+                <li class="footer__links-item"><a href="#">The Course</a></li>
+                <li class="footer__links-item"><a href="#">F.A.Q.</a></li>
+              </ul>
+            </div>
+            <div class="footer__links">
+              <h4 class="footer__links-title">Hire</h4>
+              <ul class="footer__links-list">
+                <li class="footer__links-item"><a href="#">Our Talent</a></li>
+                <li class="footer__links-item"><a href="#">Freelancers</a></li>
+                <li class="footer__links-item"><a href="#">Trainees</a></li>
+              </ul>
+            </div>
+            <div class="footer__links">
+              <h4 class="footer__links-title">About</h4>
+              <ul class="footer__links-list">
+                <li class="footer__links-item"><a href="#">Our Mission</a></li>
+                <li class="footer__links-item"><a href="#">Our Story</a></li>
+                <li class="footer__links-item"><a href="#">Our Culture</a></li>
+                <li class="footer__links-item"><a href="#">The Team</a></li>
+              </ul>
+            </div>
+            <div class="footer__links">
+              <h4 class="footer__links-title">Blog</h4>
+              <ul class="footer__links-list">
+                <li class="footer__links-item">
+                  <a href="#">Business Stories</a>
+                </li>
+                <li class="footer__links-item"><a href="#">Digital Mums</a></li>
+                <li class="footer__links-item"><a href="#">Learning</a></li>
+                <li class="footer__links-item"><a href="#">Social Media</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <form class="form footer__form">
+            <div class="form__input">
+              <img src="./images/email.svg" alt="Email" class="form__icon" />
+              <input type="text" placeholder="Type your email" />
+            </div>
+            <button type="submit" class="btn btn--primary">Get started</button>
+          </form>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="footer__social-link">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="footer__social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

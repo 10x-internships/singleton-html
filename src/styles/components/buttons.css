@@ -1,0 +1,36 @@
+.btn {
+  padding: 20px 23px;
+  font-weight: 500;
+  color: var(--white-color);
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.25s linear;
+}
+
+.btn--primary {
+  background-color: var(--green-color);
+}
+
+.btn--secondary {
+  background-color: var(--purple-color);
+}
+
+.btn--outline {
+  color: var(--purple-color);
+  border: 1px solid var(--border-color);
+}
+
+.btn--outline:hover {
+  color: white;
+  background-color: var(--purple-color);
+  border-color: var(--purple-color);
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    font-size: 14px;
+  }
+}
