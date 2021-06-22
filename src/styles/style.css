@@ -12,6 +12,7 @@
 @import "./components/form.css";
 @import "./components/section-heading.css";
 @import "./components/section-description.css";
+@import "./components/media.css";
 
 /* Layout */
 @import "./layout/header.css";
@@ -19,3 +20,4 @@
 @import "./layout/client.css";
 @import "./layout/feature.css";
 @import "./layout/api.css";
+@import "./layout/invite.css";
