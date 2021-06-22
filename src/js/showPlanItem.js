@@ -10,13 +10,15 @@ export function showPlanItem() {
     const planItemElement = clone.querySelector('.plan__item');
     const titleElement = clone.querySelector('.plan__title');
     const priceElement = clone.querySelector('.plan__price');
-    const infoElement = clone.querySelectorAll('.plan__info p');
+    const infoElement = clone.querySelector('.plan__info');
     const linkElement = clone.querySelector('.plan__link');
 
     titleElement.textContent = title;
-    infoElement[0].textContent = info.info_1;
-    infoElement[1].textContent = info.info_2;
-    infoElement[2].textContent = info.info_3;
+    infoElement.innerHTML = `
+      <p>${info.info_1}</p>
+      <p>${info.info_2}</p>
+      <p>${info.info_3}</p>
+    `;
     linkElement.href = link;
 
     if (price) {
