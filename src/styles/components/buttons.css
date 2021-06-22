@@ -1,17 +1,21 @@
 .btn {
   padding: 20px 23px;
   font-weight: 500;
+  color: var(--white-color);
   text-align: center;
+  cursor: pointer;
   border: 0;
   border-radius: 4px;
   outline: none;
   transition: all 0.25s linear;
-  cursor: pointer;
 }
 
 .btn--primary {
   background-color: var(--green-color);
-  color: var(--white-color);
+}
+
+.btn--secondary {
+  background-color: var(--purple-color);
 }
 
 .btn--outline {

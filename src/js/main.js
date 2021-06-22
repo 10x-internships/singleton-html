@@ -1,4 +1,5 @@
 import {showFeatureItem} from './showFeatureItem';
+import {showPlanItem} from './showPlanItem';
 
 // Toggle menu
 const menuToggle = document.querySelector('.header__toggle');
@@ -18,5 +19,6 @@ headerOverlay.addEventListener('click', () => {
 
 function init() {
   showFeatureItem();
+  showPlanItem();
 }
 init();

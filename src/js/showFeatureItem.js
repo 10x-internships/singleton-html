@@ -1,11 +1,11 @@
-import featureData from './data';
+import {featureItemData} from './data';
 
 // Show data to HTML using template tag
 export function showFeatureItem() {
   const featureList = document.querySelector('.feature__list');
   const template = document.getElementById('featureItem');
 
-  featureData.forEach((featureItem) => {
+  featureItemData.forEach((featureItem) => {
     const clone = template.content.cloneNode(true);
     const icon = clone.querySelector('.feature__icon img');
     const featureTitle = clone.querySelector('.feature__title');

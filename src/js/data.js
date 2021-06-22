@@ -5,7 +5,7 @@ import people from 'url:../images/people.svg';
 import user from 'url:../images/user.svg';
 import mail from 'url:../images/mail-red.svg';
 
-const data = [
+export const featureItemData = [
   {
     icon: lock,
     title: 'Security Management',
@@ -44,4 +44,37 @@ const data = [
   },
 ];
 
-export default data;
+export const planItemData = [
+  {
+    title: 'Starter',
+    price: 0,
+    info: {
+      info_1: '1 Non-Commercial Site',
+      info_2: '100GB System Storage',
+      info_3: 'Singleton Branding',
+    },
+    link: '#',
+    dark: false,
+  },
+  {
+    title: 'Singleton Plus',
+    price: 39,
+    info: {
+      info_1: '10 Non-Commercial Site',
+      info_2: '500GB System Storage',
+      info_3: 'Custom Branding',
+    },
+    link: '#',
+    dark: true,
+  },
+  {
+    title: 'Singleton Pro',
+    price: 99,
+    info: {
+      info_1: '30 Non-Commercial Site',
+      info_2: '1TB System Storage',
+      info_3: 'Singleton Branding',
+    },
+    link: '#',
+  },
+];

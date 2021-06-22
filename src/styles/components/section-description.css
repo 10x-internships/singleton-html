@@ -26,7 +26,10 @@
   }
 
   .section-description p {
-    margin-bottom: 20px;
     font-size: 14px;
+  }
+
+  .section-description a {
+    margin-top: 20px;
   }
 }
